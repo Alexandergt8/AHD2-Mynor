@@ -1,0 +1,18 @@
+<section>
+    <h1> >>> TEQUILA <<< </h1>
+    @for(Tequila of tequila; track $index){
+        <hr>
+        <h2>{{Tequila.strDrink}}</h2>
+        <h3>Categoria: {{Tequila.strCategory}}</h3>
+        <p><span>Instrucciones:</span>{{Tequila.strInstructions}}</p>
+        <h4>Ingredientes</h4>
+        <li>{{Tequila.strIngredient1}}</li>
+        <li>{{Tequila.strIngredient2}}</li>
+        <li>{{Tequila.strIngredient3}}</li>
+        
+        <img [src]="Tequila.strDrinkThumb" alt="">
+        
+    }
+    
+
+</section>
